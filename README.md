@@ -17,7 +17,7 @@ Forked from the [original](https://github.com/tsqllint/tsqllint). TSQLLint is a 
 
 ## Still to do
 
-* CommandLineParser package needs to be upgraded to the latest version because the referenced one was compiled against .NET 4.x.  But since it works anyway and the upgrade broke code, the update will have to wait.
+* CommandLineParser package needs to be upgraded to the latest version because the referenced one was compiled against .NET 4.x.  But since it works anyway and the upgrade isn't code compatible, this task will have to wait.
 
 ## Installation
 
