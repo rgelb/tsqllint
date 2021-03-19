@@ -76,10 +76,17 @@ namespace TSQLLint.Infrastructure.Configuration
                     return;
                 }
 
-                var localConfigFilePath = Path.Combine(Environment.CurrentDirectory, @".tsqllintrc");
-                if (fileSystem.File.Exists(localConfigFilePath))
+                var currentDirConfigFilePath = Path.Combine(Environment.CurrentDirectory, @".tsqllintrc");
+                if (fileSystem.File.Exists(currentDirConfigFilePath))
                 {
-                    LoadConfigFromFile(localConfigFilePath);
+                    LoadConfigFromFile(currentDirConfigFilePath);
+                    return;
+                }
+
+                var localConfigPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @".tsqllintrc");
+                if (fileSystem.File.Exists(localConfigPath))
+                {
+                    LoadConfigFromFile(localConfigPath);
                     return;
                 }
 

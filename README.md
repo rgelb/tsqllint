@@ -7,7 +7,17 @@
 
 # TSQLLint
 
-TSQLLint is a tool for describing, identifying, and reporting the presence of anti-patterns in TSQL scripts.
+Forked from the [original](https://github.com/tsqllint/tsqllint). TSQLLint is a tool for describing, identifying, and reporting the presence of anti-patterns in TSQL scripts.
+
+## My changes
+
+* Added an additional rule to look out for tables without NOLOCK hints
+* Added loading config file from executing directory in addition to the current directory
+* Updated to .NET Core 5
+
+## Still to do
+
+* CommandLineParser package needs to be upgraded to the latest version because the referenced one was compiled against .NET 4.x.  But since it works anyway and the upgrade broke code, the update will have to wait.
 
 ## Installation
 

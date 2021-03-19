@@ -19,6 +19,7 @@ namespace TSQLLint.Infrastructure.Parser
             { "keyword-capitalization", typeof(KeywordCapitalizationRule) },
             { "linked-server", typeof(LinkedServerRule) },
             { "multi-table-alias", typeof(MultiTableAliasRule) },
+            { "missing-nolock", typeof(MissingNoLockRule) },
             { "named-constraint", typeof(NamedContraintRule) },
             { "non-sargable", typeof(NonSargableRule) },
             { "object-property", typeof(ObjectPropertyRule) },
